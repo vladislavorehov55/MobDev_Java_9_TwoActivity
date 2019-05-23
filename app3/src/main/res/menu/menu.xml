@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Go to Activity One"
+        android:id="@+id/actOne">
+    </item>
+    <item
+        android:title="Go to Activity Two"
+        android:id="@+id/actTwo">
+    </item>
+    <item
+        android:title="Go to Activity Three"
+        android:id="@+id/actThree">
+    </item>
+    <item
+        android:title="Go to Activity Four"
+        android:id="@+id/actFour">
+    </item>
+
+
+
+
+</menu>
