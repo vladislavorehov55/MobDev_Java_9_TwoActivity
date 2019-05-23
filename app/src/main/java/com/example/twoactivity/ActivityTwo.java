@@ -3,16 +3,20 @@ package com.example.twoactivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class ActivityTwo extends AppCompatActivity {
 
     final String TAG = "States";
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two);
-
+        textView = (TextView) findViewById(R.id.textView1);
+        Bundle argument = getIntent().getExtras();
+        textView.setText(argument.get("Name").toString());
         Log.d(TAG, "ActivityTwo: onCreate()");
     }
 
